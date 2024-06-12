@@ -1,0 +1,50 @@
+body {
+    display: grid;
+    grid-template: 1fr 2fr 1fr / repeat(4, 1fr);
+    margin: auto;
+}
+
+header {
+    grid-column: 1/5;
+    background-color: rgb(70, 70, 70);
+}
+
+h3 {
+    padding: 0 1rem;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    margin: 75px auto auto auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+main {
+    grid-column: 1/4;
+    background-color: darkgrey;
+}
+
+.right-content {
+    grid-column: 4/5;
+}
+
+p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+
+footer {
+    grid-column: 1/5;
+    background-color: rgb(70, 70, 70);
+    text-align: center;
+}
