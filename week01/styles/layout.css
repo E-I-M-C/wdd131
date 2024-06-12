@@ -16,6 +16,7 @@ h3 {
 
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     background-color: black;
     margin: 75px auto auto auto;
