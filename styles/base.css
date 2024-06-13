@@ -1,0 +1,99 @@
+body {
+    margin: auto;
+}
+
+header {
+    background-color: rgb(70, 70, 70);
+}
+
+h1 {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.name-aquamarine {
+    color: aquamarine;
+}
+
+nav {
+    margin: auto;
+    background-color: black;
+}
+
+nav a {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    transition: .5s ease;
+}
+
+nav a:hover {
+    text-decoration: overline double;
+    background-color: gray;
+    border: 1px solid white;
+}
+
+main {
+    width: 95%;
+    margin: 15px auto;
+    display: grid;
+    grid-gap: 15px;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    margin: auto;
+    padding: 10px;
+}
+
+.card li {
+    margin: auto;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: rgb(70, 70, 70);
+    padding: 20px;
+}
+
+footer p {
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#lastModified {
+    color: aquamarine;
+}
+
+@media (min-width: 640px) {
+    nav {
+        display: flex;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .card {
+        display: inline;
+    }
+}
