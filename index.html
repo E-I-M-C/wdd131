@@ -8,12 +8,19 @@
     <meta name="description" content="Eric Martinez's 'WDD 131 - Dynamic Web Fundamentals' Home Page">
     <meta name="author" content="Eric Martinez">
     <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
     <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - <span class="name-aquamarine">Eric Martinez</span></h1>
+        <h1>WDD 131: Dynamic Web Fundamentals - Eric Martinez</h1>
         <nav>
             <a href="https://www.linkedin.com/in/eric-martinez-854937263/">LinkedIn</a>
             <a href="https://byui.instructure.com/">I-Learn</a>
@@ -23,16 +30,31 @@
     </header>
     <main>
         <section class="card">
-            <h2>About Me</h2>
-            <p><span>My name is Eric.</span> I was born in the state of Utah, but now I live in Mexico.</p>
-            <img src="images/picture.jpg" alt="Photo of Eric Martinez">
+            <h2 class="card-h2">About Me</h2>
+            <div class="card-flex">
+                <p><span>My name is Eric.</span> I was born in the state of Utah, U.S.A., but now I live
+                    in Baja California, Mexico.</p>
+                <img id="profile" src="images/picture.jpg" alt="Photo of Eric Martinez">
+            </div>
+            <div class="title-separator">
+                <h2>Baja California, Mexico</h2>
+                <hr>
+            </div>
+            <div class="card-flex">
+                <figure>
+                    <img id="flag" src="images/Flag_of_Mexico.webp" alt="Mexican Flag">
+                    <figcaption>Oficial Flag of Mexico</figcaption>
+                </figure>
+                <p>Text</p>
+            </div>
         </section>
         <section class="card">
-            <h2>Web Dev Resources</h2>
+            <h2 class="card-h2">Web Dev Resources</h2>
             <ul>
                 <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                <li><a href="https://coolors.co/">Coolors</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn">MDN Web Docs</a></li>
             </ul>
         </section>
     </main>

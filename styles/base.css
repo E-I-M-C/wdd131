@@ -1,6 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: auto;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
 }
+
+/*Header Section*/
 
 header {
     background-color: rgb(70, 70, 70);
@@ -11,10 +20,8 @@ h1 {
     padding: 20px;
     text-align: center;
     color: white;
-}
-
-.name-aquamarine {
-    color: aquamarine;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
 
 nav {
@@ -31,6 +38,8 @@ nav a {
     color: white;
     border: 1px solid black;
     transition: .5s ease;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
 
 nav a:hover {
@@ -39,31 +48,95 @@ nav a:hover {
     border: 1px solid white;
 }
 
+/*Main Section*/
+
 main {
-    width: 95%;
+    max-width: 95%;
     margin: 15px auto;
     display: grid;
-    grid-gap: 15px;
+    column-gap: 15px;
+    row-gap: 15px;
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid rgb(70, 70, 70);
     border-radius: 10px;
     overflow: hidden;
 }
 
-h2 {
+.card-h2 {
     text-align: center;
     background-color: rgb(70, 70, 70);
     color: white;
     margin: auto;
     padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.card-flex {
+    display: flex;
+}
+
+.card-flex p {
+    margin: 10px;
+}
+
+#profile {
+    width: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(70, 70, 70);
+}
+
+.title-separator h2 {
+    text-align: center;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.title-separator hr {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.card-flex figure {
+    margin: 10px;
+}
+
+#flag {
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgb(70, 70, 70);
+}
+
+.card-flex figcaption {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.card ul {
+    margin: 0;
+    position: relative;
+    top: 39%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    padding: 5px 30px;
 }
 
 .card li {
-    margin: auto;
-    border: 1px solid black;
+    margin: 10px 0;
 }
+
+.card a {
+    font-size: 1.4rem;
+}
+
+/*Footer Section*/
 
 footer {
     background-color: rgb(70, 70, 70);
@@ -78,7 +151,11 @@ footer p {
 
 #lastModified {
     color: aquamarine;
+    font-size: 1rem;
+    margin-top: 5px;
 }
+
+/*Code for Destop Devices*/
 
 @media (min-width: 640px) {
     nav {
@@ -90,10 +167,40 @@ footer p {
     }
 
     main {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: auto auto;
+    }
+
+    p {
+        font-size: 1.1rem;
     }
 
     .card {
         display: inline;
+    }
+
+    #profile {
+        width: 200px;
+        margin: 10px 20px 10px 0;
+    }
+
+    .card-flex p {
+        margin: 10px 20px;
+    }
+
+    .card-flex figure {
+        margin: 20px 0 20px 20px;
+    }
+
+    #flag {
+        width: 250px;
+    }
+
+    .card ul {
+        top: 45%;
+        left: 65%;
+    }
+
+    .card a {
+        font-size: 1rem;
     }
 }
