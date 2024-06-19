@@ -14,7 +14,7 @@ p {
     margin: 10px;
 }
 
-/*Header Section*/
+/* header section */
 
 header {
     background-color: rgb(70, 70, 70);
@@ -22,19 +22,53 @@ header {
 
 h1 {
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: white;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
 }
 
-nav {
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu::before {
+    content: "☰";
+    margin-bottom: 10px;
+}
+
+#menu.open::before {
+    content: "×";
+    font-size: 2.5rem;
+}
+
+.navigation {
     margin: auto;
     background-color: black;
 }
 
-nav a {
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    text-decoration: overline double;
+    background-color: gray;
+    border: 1px solid white;
+}
+
+.open a {
     margin: auto;
     display: block;
     text-align: center;
@@ -47,13 +81,7 @@ nav a {
     font-weight: 500;
 }
 
-nav a:hover {
-    text-decoration: overline double;
-    background-color: gray;
-    border: 1px solid white;
-}
-
-/*Main Section*/
+/* main section */
 
 main {
     max-width: 95%;
@@ -144,7 +172,7 @@ main {
     font-size: 1.4rem;
 }
 
-/*Footer Section*/
+/* footer section */
 
 footer {
     background-color: rgb(70, 70, 70);
@@ -161,60 +189,4 @@ footer p {
     color: aquamarine;
     font-size: 1rem;
     margin-top: 5px;
-}
-
-/*Code for Destop Devices*/
-
-@media (min-width: 640px) {
-    nav {
-        display: flex;
-    }
-
-    nav a {
-        flex: 1 1 100%;
-    }
-
-    main {
-        grid-template-columns: auto auto;
-    }
-
-    p {
-        font-size: 1.1rem;
-        line-height: 1.5rem;
-    }
-
-    .card {
-        display: inline;
-    }
-
-    .card-flex {
-        display: flex;
-        align-items: center;
-    }
-
-    #profile {
-        width: 200px;
-        margin: 10px 20px 10px 0;
-    }
-
-    .card-flex p {
-        margin: 10px 20px;
-    }
-
-    .card-flex figure {
-        margin: 20px 0 20px 20px;
-    }
-
-    #flag {
-        width: 250px;
-    }
-
-    .card ul {
-        top: 45%;
-        left: 65%;
-    }
-
-    .card a {
-        font-size: 1rem;
-    }
 }
