@@ -57,6 +57,7 @@ h1 {
 
 .navigation a:hover {
     background-color: lightblue;
+    color: cornflowerblue;
 }
 
 .open a {
