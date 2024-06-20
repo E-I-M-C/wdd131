@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
     display: grid;
-    background-color: indigo;
+    background-color: cornflowerblue;
 }
 
 h1 {
@@ -44,19 +44,19 @@ h1 {
 .navigation {
     display: flex;
     flex-direction: column;
-    list-style: none;
 }
 
 .navigation a {
     display: none;
-    padding: 1rem;
+    padding: 1.4rem 0;
     text-align: center;
     text-decoration: none;
+    font-size: 1.3rem;
     color: #fff;
 }
 
 .navigation a:hover {
-    background-color: mediumpurple;
+    background-color: lightblue;
 }
 
 .open a {
@@ -70,21 +70,29 @@ main {
 main h2,
 main figcaption {
     text-align: center;
+    color: cornflowerblue;
 }
 
 main img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+}
+
+main figcaption {
+    margin-top: 5px;
 }
 
 footer {
-    background-color: indigo;
+    padding: 1rem;
+    background-color: cornflowerblue;
 }
 
 footer p {
     margin: auto;
     text-align: center;
+    font-size: 1.5rem;
     color: white;
 }
 
