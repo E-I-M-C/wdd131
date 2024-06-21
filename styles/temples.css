@@ -66,6 +66,16 @@ h1 {
 
 main {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 960px;
+    place-items: center;
+}
+
+main h2 {
+    margin-top: 20px;
 }
 
 main h2,
@@ -76,13 +86,10 @@ main figcaption {
 
 main img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: auto;
+    margin: 0.5rem auto;
     border-radius: 10px;
-}
-
-main figcaption {
-    margin-top: 5px;
 }
 
 footer {
