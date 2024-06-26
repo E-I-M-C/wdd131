@@ -1,0 +1,13 @@
+@media (min-width: 559px) {
+    header {
+        padding-bottom: 0;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    main img {
+        display: none;
+    }
+}

@@ -7,10 +7,32 @@
     <title>Place</title>
     <meta name="description" content="">
     <meta name="author" content="Eric Martinez">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-
+    <header>
+        <h1>Mexico</h1>
+        <picture>
+            <source srcset="images/ringtail-large.webp" media="(min-width: 559px)">
+            <img src="images/ringtail-small.webp" alt="Ringtail Cat">
+        </picture>
+    </header>
+    <main>
+        <section>
+            <h2>Data</h2>
+        </section>
+        <section>
+            <h2>Weather</h2>
+            <img src="images/weather_clouds_sun_sunny_icon.svg" alt="Weather icon" width="100px">
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 💻 Eric Martinez 💻 Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

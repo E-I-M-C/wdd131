@@ -1,0 +1,48 @@
+:root {
+    --var-1: "";
+    --var-2: "";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #006341;
+    padding-top: 1px;
+    padding-bottom: 5px;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    background-color: #C8102E;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main img {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: #006341;
+    padding: 1rem;
+}
+
+footer P {
+    color: white;
+    text-align: center;
+}
