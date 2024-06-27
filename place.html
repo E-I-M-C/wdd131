@@ -4,29 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place</title>
-    <meta name="description" content="">
+    <title>Country Page</title>
+    <meta name="description" content="Country Page assignment.">
     <meta name="author" content="Eric Martinez">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>Mexico</h1>
-        <picture>
-            <source srcset="images/ringtail-large.webp" media="(min-width: 559px)">
-            <img src="images/ringtail-small.webp" alt="Ringtail Cat">
-        </picture>
     </header>
     <main>
-        <section>
+        <div id="hero">
+            <picture>
+                <source srcset="images/ringtail-large.webp" media="(min-width: 559px)">
+                <img src="images/ringtail-small.webp" alt="Ringtail Cat">
+            </picture>
+        </div>
+        <section id="data">
             <h2>Data</h2>
+            <div><span>Area:</span> <span>1,972,550 sq km</span></div>
+            <div><span>Population:</span> <span>129,388,467</span></div>
+            <div><span>Capital:</span> <span>Mexico City</span></div>
+            <div><span>Languages:</span> <span>Spanish, Náhuatl</span></div>
+            <div><span>Currency:</span> <span>Mexican peso</span></div>
+            <div><span>Time Zone:</span> <span>UTC-6</span></div>
+            <div><span>Calling Code:</span> <span>+52</span></div>
+            <div><span>Internet TLD:</span> <span>.mx</span></div>
         </section>
-        <section>
+        <hr>
+        <section id="weather">
             <h2>Weather</h2>
-            <img src="images/weather_clouds_sun_sunny_icon.svg" alt="Weather icon" width="100px">
+            <img src="images/weather_clouds_sun_sunny_icon.svg" alt="Weather icon" width="100">
+            <div><span>Temperature:</span> <span>10 °C</span></div>
+            <div><span>Conditions:</span> <span>Partly Cloudy</span></div>
+            <div><span>Wind:</span> <span>5 km/hr</span></div>
+            <div><span>Wind Chill:</span> <span id="windChill"></span></div>
         </section>
     </main>
     <footer>

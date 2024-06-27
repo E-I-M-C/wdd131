@@ -1,13 +1,59 @@
 @media (min-width: 559px) {
-    header {
-        padding-bottom: 0;
-    }
 
     header h1 {
         font-size: 3rem;
     }
 
+    main section {
+        background-color: white;
+        box-shadow: -5px 5px 15px black;
+        opacity: 70%;
+    }
+
+    #hero img {
+        padding: 0;
+    }
+
+    #data {
+        position: absolute;
+        top: 20%;
+        left: 2%;
+    }
+
+    main hr {
+        display: none;
+    }
+
+    #weather {
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+    }
+
+    main h2 {
+        margin: auto;
+        position: relative;
+        top: 10px;
+        right: 10px;
+        background-color: var(--color-red);
+        color: white;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    #weather h2::after {
+        content: " ⛅";
+    }
+
+    main section div:first-of-type {
+        margin-top: 2rem;
+    }
+
     main img {
         display: none;
+    }
+
+    footer p {
+        font-size: 1rem;
     }
 }
