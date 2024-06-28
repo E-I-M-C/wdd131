@@ -24,7 +24,7 @@
 
     #weather {
         position: absolute;
-        bottom: 0;
+        bottom: -6rem;
         right: 1.5rem;
         box-shadow: -5px -5px 20px black;
     }
