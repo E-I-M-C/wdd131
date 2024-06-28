@@ -1,6 +1,10 @@
-@media (min-width: 690px) {
+@media (min-width: 680px) {
     header h1 {
         font-size: 3rem;
+    }
+
+    main {
+        position: relative;
     }
 
     #hero img {
@@ -13,8 +17,9 @@
 
     #data {
         position: absolute;
-        top: 10.5rem;
+        top: 3.5rem;
         left: 1.5rem;
+        float: left;
         box-shadow: 5px 5px 20px black;
     }
 
@@ -24,8 +29,9 @@
 
     #weather {
         position: absolute;
-        bottom: -7rem;
+        bottom: 3rem;
         right: 1.5rem;
+        float: right;
         box-shadow: -5px -5px 20px black;
     }
 
