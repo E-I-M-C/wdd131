@@ -6,8 +6,7 @@
 
     main section {
         background-color: white;
-        box-shadow: -5px 5px 15px black;
-        opacity: 70%;
+        opacity: 90%;
     }
 
     #hero img {
@@ -16,8 +15,9 @@
 
     #data {
         position: absolute;
-        top: 20%;
+        top: 25%;
         left: 2%;
+        box-shadow: 5px 5px 20px black;
     }
 
     main hr {
@@ -26,8 +26,9 @@
 
     #weather {
         position: absolute;
-        bottom: 1%;
+        bottom: -20%;
         right: 2%;
+        box-shadow: -5px -5px 20px black;
     }
 
     main h2 {
@@ -43,10 +44,6 @@
 
     #weather h2::after {
         content: " ⛅";
-    }
-
-    main section div:first-of-type {
-        margin-top: 2rem;
     }
 
     main img {

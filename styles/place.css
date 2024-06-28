@@ -11,7 +11,7 @@
 
 header {
     background-color: var(--color-green);
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 header h1 {
@@ -20,7 +20,7 @@ header h1 {
 }
 
 #hero {
-    padding-top: 10px;
+    padding-top: 20px;
     background-color: var(--color-red);
 }
 
