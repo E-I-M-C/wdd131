@@ -38,6 +38,10 @@ main h2 {
     font-size: 2rem;
 }
 
+main section {
+    background-color: white;
+}
+
 main section div {
     text-align: center;
     margin-bottom: 1rem;
