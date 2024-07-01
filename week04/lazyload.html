@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Loading</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="images/400x600.svg" alt="400 by 600 placeholder" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/400x600.svg" alt="400 by 600 placeholder" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/400x600.svg" alt="400 by 600 placeholder" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
