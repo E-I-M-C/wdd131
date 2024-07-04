@@ -99,14 +99,14 @@ main {
 }
 
 .res-grid h3 {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .res-grid img {
     display: block;
     width: 100%;
     height: auto;
-    margin: 10px auto auto auto;
+    margin: 20px auto auto auto;
     border-radius: 10px;
     box-shadow: 0 0 0.75rem black;
 }
