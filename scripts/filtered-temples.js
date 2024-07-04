@@ -17,7 +17,7 @@ hamButton.addEventListener('click', () => {
 });
 
 // Array of temples
-const templesArray = [
+/*const templesArray = [
     {
         templeName: "Aba Nigeria",
         location: "Aba, Nigeria",
@@ -97,6 +97,79 @@ const templesArray = [
         area: 48480,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-japan-exterior-night-1945721.jpg"
+    }
+];*/
+
+const templesArray = [
+    {
+        templeName: "Aba Nigeria",
+        location: "Aba, Nigeria",
+        dedicated: "2005, August, 7",
+        area: 11500,
+        imageUrl: "images/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+    },
+    {
+        templeName: "Manti Utah",
+        location: "Manti, Utah, United States",
+        dedicated: "1888, May, 21",
+        area: 74792,
+        imageUrl: "images/manti-temple-768192-wallpaper.jpg"
+    },
+    {
+        templeName: "Payson Utah",
+        location: "Payson, Utah, United States",
+        dedicated: "2015, June, 7",
+        area: 96630,
+        imageUrl: "images/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    },
+    {
+        templeName: "Yigo Guam",
+        location: "Yigo, Guam",
+        dedicated: "2020, May, 2",
+        area: 6861,
+        imageUrl: "images/yigo_guam_temple_2.jpg"
+    },
+    {
+        templeName: "Washington D.C.",
+        location: "Kensington, Maryland, United States",
+        dedicated: "1974, November, 19",
+        area: 156558,
+        imageUrl: "images/washington_dc_temple-exterior-2.jpeg"
+    },
+    {
+        templeName: "Lima Perú",
+        location: "Lima, Perú",
+        dedicated: "1986, January, 10",
+        area: 9600,
+        imageUrl: "images/lima-peru-temple-evening-1075606-wallpaper.jpg"
+    },
+    {
+        templeName: "Mexico City Mexico",
+        location: "Mexico City, Mexico",
+        dedicated: "1983, December, 2",
+        area: 116642,
+        imageUrl: "images/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    },
+    {
+        templeName: "Tijuana Mexico",
+        location: "Tijuana, Mexico",
+        dedicated: "2015, December, 13",
+        area: 33367,
+        imageUrl: "images/tijuana-mexico-temple-exterior-1603896-wallpaper.jpg"
+    },
+    {
+        templeName: "Buenos Aires Argentina",
+        location: "Ciudad Evita, Buenos Aires, Argentina",
+        dedicated: "1986, January, 17",
+        area: 30659,
+        imageUrl: "images/buenos-airies-argentina-temple-1009069-wallpaper.jpg"
+    },
+    {
+        templeName: "Sapporo Japan",
+        location: "Atsubetsu-ku Sapporo, Hokkaido, Japan",
+        dedicated: "2016, August, 21",
+        area: 48480,
+        imageUrl: "images/sapporo-japan-exterior-night-1945721.jpg"
     }
 ];
 
