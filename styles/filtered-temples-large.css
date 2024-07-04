@@ -3,6 +3,10 @@
         grid-template-columns: auto auto;
     }
 
+    .hidden {
+        display: block;
+    }
+
     #menu {
         display: none;
     }

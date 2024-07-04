@@ -16,8 +16,9 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-// Array of temples
-/*const templesArray = [
+/* Array of temples (duplicated to keep original array, commented out,
+   and a modified array which removes links to improve Lighthouse score)*/
+/*const temples = [
     {
         templeName: "Aba Nigeria",
         location: "Aba, Nigeria",
@@ -99,8 +100,7 @@ hamButton.addEventListener('click', () => {
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/400x250/sapporo-japan-exterior-night-1945721.jpg"
     }
 ];*/
-
-const templesArray = [
+const temples = [
     {
         templeName: "Aba Nigeria",
         location: "Aba, Nigeria",
@@ -212,30 +212,30 @@ const createTempleCard = (filteredTemples) => {
     });
 }
 
-createTempleCard(templesArray);
+createTempleCard(temples);
 
 // Event Listener
 allTemples.addEventListener("click", () => {
     titleH2.textContent = "Home";
-    createTempleCard(templesArray);
+    createTempleCard(temples);
 });
 oldTemples.addEventListener("click", () => {
     titleH2.textContent = "Old";
-    const filteredTemples = templesArray.filter(temple => parseInt(temple.dedicated.split(", ")[0]) < 1900);
+    const filteredTemples = temples.filter(temple => parseInt(temple.dedicated.split(", ")[0]) < 1900);
     createTempleCard(filteredTemples);
 });
 newTemples.addEventListener("click", () => {
     titleH2.textContent = "New";
-    const filteredTemples = templesArray.filter(temple => temple.dedicated.match(/\d+/g)[0] > 2000);
+    const filteredTemples = temples.filter(temple => temple.dedicated.match(/\d+/g)[0] > 2000);
     createTempleCard(filteredTemples);
 });
 largeTemples.addEventListener("click", () => {
     titleH2.textContent = "Large";
-    const filteredTemples = templesArray.filter(temple => temple.area > 90000);
+    const filteredTemples = temples.filter(temple => temple.area > 90000);
     createTempleCard(filteredTemples);
 });
 smallTemples.addEventListener("click", () => {
     titleH2.textContent = "Small";
-    const filteredTemples = templesArray.filter(temple => temple.area < 10000);
+    const filteredTemples = temples.filter(temple => temple.area < 10000);
     createTempleCard(filteredTemples);
 });
