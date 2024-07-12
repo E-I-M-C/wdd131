@@ -17,7 +17,6 @@ header {
 main {
     margin: 1rem auto;
     max-width: 960px;
-
     font-weight: bold;
 }
 
@@ -44,8 +43,7 @@ h2 {
 .wf1 .radio-button {
     display: inline-block;
     text-align: center;
-    width: 70px;
-    margin: 0 auto;
+    width: 65px;
 }
 
 .wf1 div {
@@ -65,11 +63,7 @@ h2 {
     width: 100%;
     max-width: 450px;
     text-align: left;
-    background-color: white;
-}
-
-.wf1 input[type=radio] {
-    margin: 0;
+    margin-top: 5px;
 }
 
 .wf1 textarea {
@@ -77,7 +71,7 @@ h2 {
     height: 100px;
     width: 100%;
     max-width: 450px;
-    background-color: white;
+    margin-top: 5px;
 }
 
 .wf1 input[type=submit] {
@@ -87,6 +81,7 @@ h2 {
     margin-top: 1rem;
     padding: 0.8rem 1px;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 footer {
