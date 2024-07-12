@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form assignment.">
+    <meta name="author" content="Eric Martinez">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,37 +20,50 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <form method="get" action="review.html">
-            <label>Product Name
-                <select name="product" id="prod" required>
-                    <option value="" disabled selected>Choose a Product ...</option>
-                </select>
-            </label>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <label>Product Name
+                    <select name="product" id="prod" required>
+                        <option value="" disabled selected>Choose a Product ...</option>
+                    </select>
+                </label>
 
-            <div>Overall Rating</div>
-            <label>☆<input type="radio" name="rating" id="one" required></label>
-            <label>☆☆<input type="radio" name="rating" id="two" required></label>
-            <label>☆☆☆<input type="radio" name="rating" id="three" required></label>
-            <label>☆☆☆☆<input type="radio" name="rating" id="four" required></label>
-            <label>☆☆☆☆☆<input type="radio" name="rating" id="five" required></label>
+                <div>Overall Rating</div>
+                <label class="radio-button">☆<br />
+                    <input type="radio" name="rating" id="one" required>
+                </label>
+                <label class="radio-button">☆☆<br />
+                    <input type="radio" name="rating" id="two" required>
+                </label>
+                <label class="radio-button">☆☆☆<br />
+                    <input type="radio" name="rating" id="three" required>
+                </label>
+                <label class="radio-button">☆☆☆☆<br />
+                    <input type="radio" name="rating" id="four" required>
+                </label>
+                <label class="radio-button">☆☆☆☆☆<br />
+                    <input type="radio" name="rating" id="five" required>
+                </label>
 
-            <label>Date of Installation<input type="date" id="installDate" required></label>
+                <label>Date of Installation<input type="date" id="installDate" required></label>
 
-            <div>Which features did you find useful in the product<span>(Check all that apply)</span></div>
-            <label><input type="checkbox" name="durability" id="" value="">Durability</label>
-            <label><input type="checkbox" name="ease" id="" value="">Ease of Use</label>
-            <label><input type="checkbox" name="performance" id="" value="">Performance</label>
-            <label><input type="checkbox" name="design" id="" value="">Design</label>
+                <div>Which features did you find useful in the product<span>(Check all that apply)</span></div>
+                <label><input type="checkbox" name="durability" id="durability" value="durability"> Durability</label>
+                <label><input type="checkbox" name="ease" id="ease" value="ease"> Ease of Use</label>
+                <label><input type="checkbox" name="performance" id="performance" value="performance">
+                    Performance</label>
+                <label><input type="checkbox" name="design" id="design" value="design"> Design</label>
 
-            <label>Written Review <span>(optional)</span>
-                <input type="text" id="rev" name="review">
-            </label>
+                <label>Written Review <span>(optional)</span>
+                    <textarea name="review" id="review"></textarea>
+                </label>
 
-            <label>Your Name <span>(optional)</span>
-                <input type="text" id="user" name="userName">
-            </label>
+                <label>Your Name <span>(optional)</span>
+                    <input type="text" id="user" name="userName">
+                </label>
 
-            <input type="submit" value="Post Review">
+                <input type="submit" value="Post Review">
+            </fieldset>
         </form>
     </main>
     <footer>
