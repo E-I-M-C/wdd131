@@ -63,8 +63,9 @@ h2 {
     display: block;
     padding: 0.75rem 1px;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     text-align: left;
+    background-color: white;
 }
 
 .wf1 input[type=radio] {
@@ -75,13 +76,14 @@ h2 {
     display: block;
     height: 100px;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
+    background-color: white;
 }
 
 .wf1 input[type=submit] {
     display: block;
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     margin-top: 1rem;
     padding: 0.8rem 1px;
     font-size: 1.5rem;
