@@ -23,11 +23,6 @@ header>h1 {
     color: white;
 }
 
-header>h1:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
 h1,
 h2,
 h3,
