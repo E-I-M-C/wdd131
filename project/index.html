@@ -4,11 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Baja Tourism | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <script src="scripts/project.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
+    <header>
+        <button id="menu"></button>
+        <h1>Baja Tourism</h1>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">Restaurants</a>
+            <a href="#">Places</a>
+            <a href="#">Activities</a>
+        </nav>
+    </header>
+    <main>
+        <section class="restaurant">
+            <picture>
+                <source src="images/fish-taco-large.webp" media="(min-width: 640px)">
+                <img src="images/fish-taco-small.webp" alt="Fish taco" loading="lazy">
+            </picture>
+            <h2>Restaurants</h2>
+            <p></p>
+        </section>
+        <section>
+            <h2>Places</h2>
+            <p></p>
+            <picture></picture>
+        </section>
+        <section>
+            <picture></picture>
+            <h2>Activities</h2>
+            <p></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 💻 Eric Martinez 💻 Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
