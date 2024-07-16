@@ -85,10 +85,8 @@ main {
 
 main section {
     display: grid;
-    background-color: var(--secondary-color);
     padding: 1rem;
-    border-radius: 3px;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 main section h2 {
@@ -100,11 +98,76 @@ img {
     display: block;
     margin: auto;
     width: 100%;
+    max-width: 500px;
     height: auto;
 }
 
-footer {
+.sights picture {
+    grid-row: 1/2;
+}
+
+.sights h2 {
+    grid-row: 2/3;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+}
+
+.grid section {
+    background-color: var(--secondary-color);
+}
+
+.wf1 {
+    margin: auto;
+    width: 60%;
+    min-width: 350px;
+}
+
+.wf1 fieldset {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 6px;
+    padding: 0 2rem 1rem 2rem;
+}
+
+.wf1 label {
+    display: block;
     margin-top: 1rem;
+}
+
+.wf1 input[type=email],
+.wf1 input[type=text] {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    border: 1px solid #555;
+    border-radius: 3px;
+}
+
+.wf1 input[type=submit] {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    border: 1px solid #555;
+}
+
+.wf1 input:required {
+    border-bottom: solid 4px red;
+}
+
+.wf1 input:required:valid {
+    border-bottom: solid 4px green;
+}
+
+footer {
+    margin-top: 2rem;
     padding: 1.5rem;
     background-color: var(--primary-color);
     color: white;
