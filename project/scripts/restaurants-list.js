@@ -12,63 +12,63 @@ const restaurants = [
         link: "https://www.tripadvisor.com/Restaurant_Review-g150776-d3825175-Reviews-Condimento_Restaurant-Tijuana_Baja_California.html"
     },
     {
-        name: "3",
-        city: "3",
-        image: "3",
-        link: "3"
+        name: "Latitud 32",
+        city: "Ensenada",
+        image: "images/restaurants/latitud-32.webp",
+        link: "https://www.tripadvisor.com/Restaurant_Review-g150770-d5598013-Reviews-Latitud_32-Ensenada_Ensenada_Municipality_Baja_California.html"
     },
     {
-        name: "4",
-        city: "4",
-        image: "4",
-        link: "4"
+        name: "I-Petra",
+        city: "Ensenada",
+        image: "images/restaurants/i-petra.webp",
+        link: "https://www.tripadvisor.com/Restaurant_Review-g6755849-d23814828-Reviews-Restaurante_I_Petra-Ejido_El_Porvenir_Valle_de_Guadalupe_Ensenada_Municipality_.html"
     },
     {
-        name: "5",
-        city: "5",
-        image: "5",
-        link: "5"
+        name: "Ochuna Restaurante",
+        city: "Rosarito",
+        image: "images/restaurants/restaurante-ochuna.webp",
+        link: "https://www.tripadvisor.com/Restaurant_Review-g150774-d9819559-Reviews-Ochuna_Restaurante-Rosarito_Baja_California.html"
     },
     {
-        name: "6",
-        city: "6",
-        image: "6",
-        link: "6"
+        name: "El Gaucho Argentino",
+        city: "Rosarito",
+        image: "images/restaurants/el-gaucho.webp",
+        link: "https://www.tripadvisor.com/Restaurant_Review-g150774-d4605142-Reviews-El_Gaucho_Argentino-Rosarito_Baja_California.html"
     },
     {
-        name: "7",
-        city: "7",
-        image: "7",
-        link: "7"
+        name: "Corazón Artesano",
+        city: "Mexicali",
+        image: "images/restaurants/corazon-artesano.webp",
+        link: "https://www.tripadvisor.com/Restaurant_Review-g154247-d26246299-Reviews-Corazon_Artesano-Mexicali_Baja_California.html"
     },
     {
-        name: "8",
-        city: "8",
-        image: "8",
-        link: "8"
+        name: "Cenaduria Selecta",
+        city: "Mexicali",
+        image: "images/restaurants/cenaduria-selecta.webp",
+        link: "https://www.tripadvisor.com/Restaurant_Review-g154247-d2640436-Reviews-Cenaduria_Selecta-Mexicali_Baja_California.html"
     },
     {
         name: "9",
         city: "9",
-        image: "9",
+        image: "images/restaurants/",
         link: "9"
     },
     {
         name: "10",
         city: "10",
-        image: "10",
+        image: "images/restaurants/",
         link: "10"
     },
     {
         name: "11",
         city: "11",
-        image: "11",
+        image: "images/restaurants/",
         link: "11"
     },
     {
         name: "12",
         city: "12",
-        image: "12",
+        image: "images/restaurants/",
         link: "12"
     }
 ];
@@ -80,13 +80,16 @@ restaurants.forEach(restaurant => {
     const img = document.createElement("img");
     const title = document.createElement("h2");
     const city = document.createElement("p");
-    const link = document.createElement("a");
+    const link = document.createElement("p");
+    const a = document.createElement("a");
 
     section.classList.toggle("list-item");
 
     img.setAttribute("src", restaurant.image);
     img.setAttribute("alt", restaurant.name);
     img.setAttribute("loading", "lazy");
+    img.setAttribute("width", 1200);
+    img.setAttribute("height", 800);
     section.appendChild(img);
 
     title.textContent = restaurant.name;
@@ -95,8 +98,9 @@ restaurants.forEach(restaurant => {
     city.innerHTML = `<span>City:</span> ${restaurant.city}`;
     section.appendChild(city);
 
-    link.textContent = "See more";
-    link.setAttribute("href", restaurant.link);
+    a.textContent = "See more about this restaurant";
+    a.setAttribute("href", restaurant.link);
+    link.appendChild(a);
     section.appendChild(link);
 
     divGrid.appendChild(section);

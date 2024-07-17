@@ -39,6 +39,7 @@ header h1 {
 
 #menu::before {
     content: "☰";
+    appearance: none;
 }
 
 #menu.open {
@@ -80,6 +81,7 @@ header h1 {
 
 main {
     width: 90%;
+    max-width: 1044px;
     margin: 0 auto;
 }
 
@@ -100,6 +102,7 @@ img {
     width: 100%;
     max-width: 500px;
     height: auto;
+    border-radius: 6px;
 }
 
 .sights picture {
@@ -118,6 +121,20 @@ img {
 
 .grid section {
     background-color: var(--secondary-color);
+}
+
+.list-item {
+    display: block;
+}
+
+.list-item h2 {
+    margin-top: 0.5rem;
+}
+
+.list-item p {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.4rem;
 }
 
 .wf1 {
