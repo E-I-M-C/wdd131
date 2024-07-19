@@ -51,6 +51,7 @@ function subscribe() {
     email.type = "email";
     email.id = "email";
     email.required = true;
+    email.autocomplete = true;
     labelEmail.innerHTML = `Email*`;
     labelEmail.appendChild(email);
     fname.type = "text";
