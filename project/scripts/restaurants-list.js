@@ -1,5 +1,5 @@
 // Restaurants object array
-const restaurants = [
+const restaurantList = [
     {
         name: "San Miguel Restaurant",
         location: "Tijuana",
@@ -78,33 +78,37 @@ const restaurants = [
 const divGrid = document.querySelector(".grid");
 
 // Add oject array data to the div grid
-restaurants.forEach(restaurant => {
-    const section = document.createElement("section");
-    const img = document.createElement("img");
-    const title = document.createElement("h2");
-    const city = document.createElement("p");
-    const link = document.createElement("p");
-    const a = document.createElement("a");
+const displayRestaurants = (restaurants) => {
+    restaurants.forEach(restaurant => {
+        const section = document.createElement("section");
+        const img = document.createElement("img");
+        const title = document.createElement("h2");
+        const city = document.createElement("p");
+        const link = document.createElement("p");
+        const a = document.createElement("a");
 
-    section.classList.toggle("list-item");
+        section.classList.toggle("list-item");
 
-    img.setAttribute("src", restaurant.image);
-    img.setAttribute("alt", restaurant.name);
-    img.setAttribute("loading", "lazy");
-    img.setAttribute("width", 1200);
-    img.setAttribute("height", 800);
-    section.appendChild(img);
+        img.setAttribute("src", restaurant.image);
+        img.setAttribute("alt", restaurant.name);
+        img.setAttribute("loading", "lazy");
+        img.setAttribute("width", 1200);
+        img.setAttribute("height", 800);
+        section.appendChild(img);
 
-    title.textContent = restaurant.name;
-    section.appendChild(title);
+        title.textContent = restaurant.name;
+        section.appendChild(title);
 
-    city.innerHTML = `<span>City:</span> ${restaurant.location}`;
-    section.appendChild(city);
+        city.innerHTML = `<span>City:</span> ${restaurant.location}`;
+        section.appendChild(city);
 
-    a.textContent = "See more about this restaurant";
-    a.setAttribute("href", restaurant.link);
-    link.appendChild(a);
-    section.appendChild(link);
+        a.textContent = `See more about this restaurant`;
+        a.setAttribute("href", restaurant.link);
+        link.appendChild(a);
+        section.appendChild(link);
 
-    divGrid.appendChild(section);
-});
+        divGrid.appendChild(section);
+    });
+}
+
+displayRestaurants(restaurantList);

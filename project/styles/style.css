@@ -131,18 +131,22 @@ img {
     grid-row: 2/3;
 }
 
+#filter {
+    margin-top: 2rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 15px;
-}
-
-.grid section {
-    background-color: var(--secondary-color);
+    column-gap: 15px;
 }
 
 .list-item {
     display: block;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
 }
 
 .list-item h2 {

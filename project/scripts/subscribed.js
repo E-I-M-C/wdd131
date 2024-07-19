@@ -17,7 +17,7 @@ if (subscribed == 0) {
 } else if (subscribed != 0) {
     const button = document.createElement("button");
 
-    button.textContent = "Subscribe with Another Email";
+    button.textContent = `Subscribe with Another Email`;
     button.id = "subscribe-again";
 
     section.appendChild(button);
