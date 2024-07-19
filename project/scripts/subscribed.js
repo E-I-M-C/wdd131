@@ -29,9 +29,14 @@ if (subscribed == 0) {
     });
 }
 
+// Function to reset the section being appended to the main element
+function reset() {
+    section.innerHTML = ``;
+}
+
 // Function to show the form
 function subscribe() {
-    section.innerHTML = ``;
+    reset();
 
     const form = document.createElement("form");
     const fieldset = document.createElement("fieldset");
