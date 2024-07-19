@@ -15,10 +15,3 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
-
-// Code to store if user has subscribed and hide the form
-const submitForm = document.querySelector("form");
-
-submitForm.addEventListener('submit', () => {
-    alert("You can unsubscribe via email.");
-});

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/style-large.css">
     <script src="scripts/project.js" defer></script>
     <script src="scripts/restaurants-list.js" async></script>
+    <script src="scripts/subscribed.js" async></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
 
 <body>
     <header>
-        <button id="menu"></button>
+        <button id="menu" title="Menu"></button>
         <h1>Baja Tourism</h1>
         <nav class="navigation">
             <a href="index.html">Home</a>
@@ -30,17 +31,6 @@
     </header>
     <main>
         <div class="grid"></div>
-        <section id="section-form">
-            <h2>Subscribe for Updates</h2>
-            <form method="get" action="subscribed.html" class="wf1">
-                <fieldset>
-                    <label>Email*<input type="email" id="email" required></label>
-                    <label>First Name <span>(Optional)</span><input type="text" id="fname"></label>
-                    <label>Last Name <span>(Optional)</span><input type="text" id="lname"></label>
-                    <input type="submit" value="Subscribe">
-                </fieldset>
-            </form>
-        </section>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> 💻 Eric Martinez 💻 Mexico</p>
